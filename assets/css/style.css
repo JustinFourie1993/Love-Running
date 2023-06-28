@@ -137,7 +137,6 @@ h2 {
 #center-about {
     width: 33%;
     margin: 0 auto;
-
 }
 
 hr {
@@ -188,7 +187,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url(../images/ethos-center-image.jpg) no-repeat center center;
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
@@ -196,13 +195,12 @@ hr {
 /* event times */
 
 #times {
-    background-image: url(../images/dublin-city.webp);
+    background-image: url(/assets/images/dublin-city.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     overflow: hidden;
-    height: 300px;
 }
 
 #times div {
@@ -253,12 +251,12 @@ footer {
 
 #photos>img {
     width: 100%;
-
 }
 
-/* media queries */
+/* Media queries */
 
-@media screen and (max-width:1200px) {
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
@@ -274,7 +272,7 @@ footer {
     #right-about {
         width: 100%;
         float: left;
-        padding: 00;
+        padding: 0;
     }
 
     #center-about {
@@ -284,19 +282,23 @@ footer {
         padding: 0;
     }
 
+    #times>div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
-
-
-
 }
 
 /* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
 
-@media screen and (max-width:950px) {
     #menu {
-        clear: both;
+        clear: left;
         float: left;
         margin-left: 30px;
         margin-bottom: 20px;
@@ -324,11 +326,20 @@ footer {
         text-align: center;
     }
 
-
-
-
     .left-about-heading p,
     .right-about-heading p {
-        padding: 0 20px;
         text-align: center;
+        padding: 0 20px;
     }
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
