@@ -1,5 +1,5 @@
 ---
-name: User Issue Template
+name: Add user story
 about: Describe this issue template's purpose here.
 title: ''
 labels: ''
@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-As a "role" I can "capabillity" So that "benifit"
+In order to **receive benefit** as a **role**, I can **goal / desire**
